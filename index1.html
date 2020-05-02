@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone Homepage</title>
+    <!-- Links -->
+    
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <nav>
+        <ul class="left-nav ">
+            <li><a  href="#">About</a></li>
+            <li><a  href="#">Store</a></li>
+
+        </ul>
+        <ul class="right-nav ">
+            <li>
+                <a  href="#">Gmail</a>
+              </li>
+              <li >
+                <a  href="#">Images</a>
+              </li>
+              
+              <li >
+                <a href="#"><i class="fa fa-bell-o"></i></a>
+              </li>
+              <li >
+                  <a href="#"><img src="./img/emma.jpg " alt="Emma Picture" class="rounded-circle "></a>
+              </li>
+        </ul>
+    </nav> 
+    <!-- Section Part -->
+    <section class="container-fluid">
+        <div class="google-btn">
+            <button type="button" class="btn google-logo  justify-content-center "><img src="./img/google2.0.0.jpg" alt="Google Logo" class="google-logo"></button>
+            
+        </div>
+        <div class=" google-input ">
+            <button class="input-box rounded-top justify-content-center rounded-bottom">
+                <i class="fa fa-search"></i>
+                <input type="text" class="mx-1"placeholder="Search Google or Type URL">
+                <i class="fa fa-microphone"></i>
+            </button>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="google-footer fixed-bottom">
+        
+           
+                <ul class=" left-footer justify-content-start ">
+                    <li >
+                        <a  href="#">Advertising </a>
+                    </li>
+                    <li >
+                        <a  href="#">Business</a>
+                    </li>
+                    
+                </ul>
+                <ul class=" right-footer justify-content-end ">
+                    <li >
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li >
+                      <a  href="#">Terms</a>
+                    </li>
+                    <li >
+                      <a href="#">Settings</a>
+                    </li>
+                    
+                </ul>
+           
+        
+        
+    </footer>
+    
+</body>
+<script>
+    document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+</script>
+</html>

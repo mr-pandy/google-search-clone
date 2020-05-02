@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #000;
+    background: #fff ;
+    font-family: 'Segoe UI', Roboto, arial, sans-serif ;
+}
+
+a{
+    color: rgba(0, 0, 0, 0.85) ;
+    font-size: 13px ;
+    text-decoration: none;
+
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+nav{
+    padding: 10px 20px 10px 20px;   
+    margin-bottom: 10px;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.left-nav{
+    float: left;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.right-nav{
+   float: right;
+    height: 60px;
+    padding: 20px 0;
+    align-items: center;
+}
+.left-nav li,.right-nav li{
+    margin: 3px 10px 2px 4px;
+    padding: 3px;
+}
+.right-nav img, .right-nav a{
+    max-width: 32px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+/* Input Section & Google Logo */
+.container-fluid{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.container-fluid .google-logo{
+    border: none;
+    
+}
+.container-fluid .google-btn img{
+    max-width: 550px;
+    max-height: 220px;
+    cursor: pointer;
+  
+
+}
+.container-fluid .input-box{
+    width: 550px;  
+    margin-top: 10px;
+    padding: 3px;
+    height: 44px;
+    background: #ffffff;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+
+.container-fluid .input-box input{
+    width: 480px;
+    padding: 4px;
+    border: none;
+}
+.input-box i{
+    color: grey ;
+}
+
+/* Footer  */
+.google-footer{
+    background: #dddddd;
+    padding: 10px 40px 5px 40px;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.google-footer li{
+    display: inline;
+    margin-right: 25px ;
+    padding: 3px ;
+    font-size:35px;
+    color: #eee;
+}
+
+.google-footer .left-footer{
+    float: left;
+    
+}
+.google-footer .right-footer{
+   float : right;
+    margin-right: 50px;
+}
+@media (max-width: 900px){
+    .right-nav{
+        margin-right: 50px;
+     }
+     .left-nav{
+        margin-right: 30px;
+     }
+}
+@media (max-width: 720px){
+    .container-fluid .input-box{
+        width: 450px;  
+        padding: 2px;
+    }
+    .container-fluid .input-box input{
+        width: 380px;
+        padding: 4px;
+        border: none;
+    }
+}
+@media (max-width: 570px){
+    .container-fluid .input-box{
+        width: 400px;  
+        padding: 2px;
+    }
+    .container-fluid .input-box input{
+        width: 330px;
+        padding: 4px;
+       
+    }
+    .google-footer .left-footer,.google-footer .right-footer{
+        font-size: 20px;
+        
+    }
+    .google-footer .right-footer{
+        margin-right: 10px;
+    }
+    .google-footer li{
+        margin-right: 15px ;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+    nav .right-nav{
+        background: #f2f2f2;
+        display: block;
+       position: absolute;        
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        transform: translateX(-1500px);
+        transition: transform 1s ease-in-out ;
+        opacity: 0.9;
+        border-right: 2px solid #ccc;
+        padding: 20px;
+    }
+    nav ul .right-nav li {
+        
+        border-bottom: 1px solid #ccc;
+        
+    }
+    nav .right-nav li:last-child {
+        border-bottom: 0;
+    }
+    nav .right-nav .show {
+        transform: translateX(-20px);
+    }
+   /* / * Input Section & Google Logo */ 
+    .container-fluid{
+        
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+}
+@media (max-width: 480px){
+    .container-fluid .input-box{
+        width: 300px;  
+        
+    }
+    .container-fluid .input-box input{
+        width: 230px;
+       
+       
+    }
+    .google-footer .left-footer,.google-footer .right-footer{
+        font-size: 20px;
+        
+    }
+    .google-footer .right-footer{
+        margin-right: 10px;
+    }
+    .google-footer li{
+        margin-right: 15px ;
+    }
+    .left-nav, .right-nav{
+        padding: 10px 0;
+    }
+    nav{
+        padding: 5px;   
+        
+    }
+}

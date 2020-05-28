@@ -16,14 +16,7 @@ a{
 
 }
 
-.menu-btn{
-    cursor: pointer;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-    z-index: 2;
-    display: none;
-}
+
 nav{
     padding: 10px 20px 10px 20px;   
     margin-bottom: 10px;
@@ -222,6 +215,439 @@ li{
     }
     nav{
         padding: 5px;   
+        
+    }
+}
+
+/* Section 2 - Search Page */
+/* Top nav */
+.top-nav{
+    background: #FDFDFC;
+    max-height: 20vh;
+}
+/* nav */
+.top-nav .search-nav{
+    padding: 10px 5px 10px 5px;  
+    background: #FDFDFC;
+    margin-bottom: 50px;
+
+   
+}
+.google-img{
+    width: 150px;
+    height: 80px;
+}
+
+.left-nav-search .input-search{
+    width: 700px;  
+    display: flex;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    height: 44px;
+    background: #ffffff;
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+
+}
+.left-nav-search li{
+    margin-right: 25px ;
+    
+    
+}
+.left-nav-search .input-search input{
+    width: 690px;
+    padding: 7px;
+    font-size: 15px;
+    border: none;
+   
+}
+.left-nav-search .input-search i{
+    color: grey ;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.left-nav-search{
+    display: flex;
+    justify-content:left ;
+    align-items: center;
+    float: left;
+    width: 70%;
+   
+}
+
+.right-nav-search{
+     float: right;
+     display: flex;
+     align-items: center;
+     height: 60px;
+     padding-top: 15px;
+     align-items: center;
+ }
+ .right-nav-search .input-search i{
+    color: #000;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+ .right-nav-search li{
+    margin-right: 45px ;
+}
+ .right-nav-search img{
+     max-width: 35px;
+     height: 32px;
+     border-radius: 50%;
+     align-items: center;
+ }
+/* Body */
+.top-nav .body, .section-body{
+    margin: auto 150px;
+    margin-top: 70px;
+    margin-right: 550px;
+    
+}
+.top-nav a{
+    padding: 15px;
+    font-size: 22px;
+}
+.top-nav .active{
+    color: rgb(9, 33, 247);
+    border-bottom: 3px solid  rgb(9, 33, 247);
+    border-width: 100%;
+}
+.top-nav .left-nav-link{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.body .right-nav-link{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.body .left-nav-link, .body .right-nav-link{
+    font-size: 30px;
+    display: flex;
+}
+.body .left-nav-link li, 
+.body .right-nav-link li{
+   margin-right: 40px;
+   
+    
+}
+/* Section Body */
+.section-body h2{
+    /* margin-top: 100px; */
+    font-size: 22px;
+    color: rgb(9, 33, 247);
+    padding: 5px;
+}
+.section-body span{
+    font-size: 17px;
+    color: rgb(6, 99, 6);
+    padding: 5px;
+}
+.section-body span i{
+    font-size: 14px;
+}
+.section-body .content span{
+
+} 
+.section-body .content p span{
+    color: grey;
+}
+.section-body .results{
+    color: rgb(99, 94, 94);
+    margin-left: 9px;
+    margin-bottom: 20px;
+    
+}
+.section-body .content p{
+    font-size: 17px;
+    color: rgb(19, 16, 16);
+} 
+table{
+    border: 2px solid rgb(99, 94, 94);
+    width: 100%;
+    opacity: 0.95;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+table thead td{
+    text-align: left;
+    border-bottom: 2px solid  rgb(99, 94, 94);
+    padding: 10px;
+    font-size: 22px;
+    color: rgb(99, 94, 94);
+    
+}
+table td{
+    text-align: left;
+    border-bottom: 2px solid  rgb(99, 94, 94);
+    font-size: 20px;
+    padding: 7px;
+    opacity: 1;
+    color: #000;
+}
+table td i{
+    float: right;
+    margin-right: 20px;
+    
+}
+table td i:hover{
+    transform: translateY(-5px);
+    
+}
+table tr{
+    color: #000;
+    font-weight: bold;
+    opacity: 0.8;
+    
+}
+/* Footer  */
+.google-footer-search{
+    background: #dddddd;
+    padding: 5px 10px 5px 10px;
+    height: 8vh;
+    margin: 0 auto;
+    margin-top: 20px;
+   
+}
+.google-footer-search li{
+    display: inline;
+    margin-right: 25px ;
+    padding: 3px ;
+    font-size:35px;
+    color: #eee;
+}
+
+.google-footer-search .left-footer{
+    float: left;
+    
+}
+.google-footer-search .right-footer{
+   float : right;
+    margin-right: 50px;
+}
+/* Media Query for Search Page */
+@media (max-width: 1600px){
+    .left-nav-search .input-search{
+        width: 550px;  
+        padding: 15px;
+}
+    .left-nav-search li{
+        margin-right: 5px ;
+    }
+    .left-nav-search .input-search input{
+        width: 530px;
+        padding: 7px;
+        font-size: 15px;
+        border: none;
+    }
+    .section-body .results{
+        margin-top: 20px;
+    }
+    .left-nav-search{
+        width: 65%;
+    }
+     .right-nav-search .input-search i{
+        margin-right: 8px;
+    }
+    
+     .right-nav-search li{
+        margin-right: 45px ;
+    }
+    .top-nav a{
+        padding: 8px;
+        font-size: 15px;
+    }
+    .top-nav .active{
+        color: rgb(9, 33, 247);
+        border-bottom: 3px solid  rgb(9, 33, 247);
+        border-width: 100%;
+    }
+
+}
+@media (max-width: 1310px){
+    /* .top-nav a{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .body .left-nav-link li, 
+    .body .right-nav-link li{
+       margin-right: 15px;
+       
+        
+    } */
+    .section-body h2{
+        /* margin-top: 100px; */
+        font-size: 19px;
+       
+    }
+    .top-nav .body, .section-body{
+        margin: auto 160px;
+        margin-top: 70px;
+        margin-right: 350px;
+        
+    }
+}
+@media (max-width: 1150px){
+   
+    .left-nav-search .input-search{
+        width: 450px;  
+        padding: 15px;
+}
+    .left-nav-search li{
+        margin-right: 5px ;
+    }
+    .left-nav-search .input-search input{
+        width: 430px;
+        padding: 7px;
+        font-size: 15px;
+        border: none;
+    }
+    .top-nav .body, .section-body{
+        margin: auto 160px;
+        margin-top: 70px;
+        margin-right: 180px;
+        
+    }
+}
+@media (max-width: 960px){
+    /* .top-nav a{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .body .left-nav-link li, 
+    .body .right-nav-link li{
+       margin-right: 15px;
+       
+        
+    } */
+    .top-nav .body, .section-body{
+        margin: auto 160px;
+        margin-top: 70px;
+        margin-right: 100px;
+        
+    }
+    .right-nav-search li{
+        margin-right: 25px ;
+    }
+}
+@media (max-width: 875px){
+     
+    .body .left-nav-link li, 
+    .body .right-nav-link li{
+       margin-right: 5px;
+       margin-bottom: 10px;
+       
+    }
+    .left-nav-search .input-search{
+        width: 350px;  
+        padding: 10px;
+}
+    .left-nav-search li{
+        margin-right: 5px ;
+    }
+    .left-nav-search .input-search input{
+        width: 330px;
+        padding: 7px;
+        font-size: 15px;
+        border: none;
+    }
+}
+@media (max-width: 740px){
+     
+    
+    .left-nav-search .input-search{
+        width: 350px;  
+        padding: 10px;
+}
+    .left-nav-search li{
+        margin-right: 5px ;
+    }
+    .left-nav-search .input-search input{
+        width: 330px;
+        padding: 7px;
+        font-size: 15px;
+        border: none;
+    }
+    .top-nav .body, .section-body{
+        margin: auto 160px;
+        margin-top: 70px;
+        margin-right: 60px;
+        
+    }
+    .right-nav-search li{
+        margin-right: 15px ;
+    }
+}
+@media (max-width: 780px){
+     
+    
+    .left-nav-search .input-search{
+        width: 280px;  
+        padding: 10px;
+}
+    .left-nav-search li{
+        margin-right: 5px ;
+    }
+    .left-nav-search .input-search input{
+        width: 260px;
+       
+    }
+    .top-nav .body, .section-body{
+        margin: auto 100px;
+        margin-top: 70px;
+        margin-right: 60px;
+        
+    }
+    .right-nav-search li{
+        margin-right: 15px ;
+    }
+}
+@media (max-width: 730px){
+    .left-nav-search .input-search{
+        width: 380px;  
+        padding: 10px;
+}
+    
+    .left-nav-search .input-search input{
+        width: 360px;
+       
+    }
+    .top-nav .body, .section-body{
+        margin: auto 60px;
+        margin-top: 70px;
+        margin-right: 60px;
+        
+    }
+    .right-nav-search li{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .body .left-nav-link li, 
+    .body .right-nav-link li{
+       margin-right: 3px;
+       
+    }
+    .left-nav-search .input-search{
+        width: 220px;  
+        padding: 10px;
+}
+    
+    .left-nav-search .input-search input{
+        width: 200px;
+       
+    }
+    .top-nav .body, .section-body{
+        margin: auto 20px;
+        margin-top: 70px;
+        margin-right: 20px;
         
     }
 }
